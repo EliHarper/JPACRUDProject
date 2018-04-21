@@ -7,14 +7,14 @@
 	<persistence-unit name="CrudApp">
 		<provider>org.hibernate.jpa.HibernatePersistenceProvider
     </provider>
-		<!-- <class>com.skilldistillery.jpacrud.entities.NOSUCHCLASS!!!!!!!!!!!!!</class> -->
+	 <class>com.skilldistillery.jpacrud.entities.Distillery</class>
 		
 		<properties>
 			<property name="javax.persistence.jdbc.url"
-				value="jdbc:mysql://localhost:3306/CHANGEMEORTHISWONTWORK" /> 
-			<property name="javax.persistence.jdbc.user"  value="CHANGEME" /> 
+				value="jdbc:mysql://localhost:3306/distillerydb" /> 
+			<property name="javax.persistence.jdbc.user"  value="distilleryuser" /> 
 			<property name="javax.persistence.jdbc.password"
-				 value="CHANGEME" /> 
+				 value="distilleryuser" /> 
 			<property name="javax.persistence.jdbc.driver"
 				value="com.mysql.jdbc.Driver" />
 
