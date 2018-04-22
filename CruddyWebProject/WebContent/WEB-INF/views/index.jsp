@@ -57,22 +57,14 @@
 					<div class="row-fluid">
 						<div class="span12">
 							<div class="span6">
-								<c:forEach var="d" items="${distilleries}">
-										<c:if test="${d.id % 2 == 0}">
-											</form>
-											<form action="show.do" method="GET">
-												<input type="hidden" value="${d.id}" name="id">
-												<button type="button" class="btn btn-default">${d.name}</button>
-										</c:if>
-										<c:if test="${d.id % 2 == 1}">
-											<form action="show.do" method="GET">
-												<input type="hidden" value="${d.id}" name="id">
-												<button type="button" class="btn btn-info">${d.name}</button>
-											</form>
-										</c:if>
-										<br>
-										<br>
+								<c:forEach var="distillery" items="${distilleries}">
+								<form action="show.do" method="GET">
+								
+										<input type="hidden" name="id" value="${distillery.id}">
+										<input type="submit" class="btn btn-info" value="${distillery.name}">
+									</form>
 								</c:forEach>
+								<br>
 							</div>
 						</div>
 					</div>
