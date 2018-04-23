@@ -47,43 +47,42 @@
 </head>
 <body>
 
-<div class="container">
-	<div class="row">
-		<div class="span12">
-			<div class="head">
-				<div class="row-fluid">
-					<div class="span12">
-						<div class="span6">
+	<div class="container">
+		<div class="row">
+			<div class="span12">
+				<div class="head">
+					<div class="row-fluid">
+						<div class="span12">
+							<div class="span6">
 
-							<h3>Please enter the information of the distillery you would
-								like to add:</h3>
+								<h3>Please enter the information of the distillery you
+									would like to add:</h3>
 
-							<br><br>
+								<br>
+								<br>
 
-							<form action="addDistillery.do" method="POST">
-								Name: &emsp;&emsp;&thinsp;&thinsp;&thinsp;&thinsp;<input type="text" name="name"> <br>
-								Type: &emsp;&emsp;&emsp;<input type="text" name="type">
-								<br> Latitude: &emsp;<input type="text" name="latitude">
-								<br> Longitude: <input type="text" name="longitude">
-								<br> <input type="hidden" value="${distillery.name}"
-									name="name"> <input type="hidden"
-									value="${distillery.type}" name="type"> <input
-									type="hidden" value="${distillery.latitude}" name="latitude">
-								<input type="hidden" value="${distillery.longitude}"
-									name="longitude">
-									
-									<br>
-									
-								<button type="button" class="btn btn-primary">Add
-									Distillery</button>
-							</form>
+								<form action="addDistillery.do" method="POST">
+									Name: &emsp;&emsp;&thinsp;&thinsp;&thinsp;&thinsp;<input
+										type="text" name="name"> <br> 
+									Type: &emsp;&emsp;&emsp;<input type="text" name="type"> <br>
+									Latitude: &emsp;<input type="text" name="latitude"> <br>
+									Longitude: <input type="text" name="longitude"> <br>
+									<input type="hidden" value="${distillery.name}" name="name">
+									<input type="hidden" value="${distillery.type}" name="type">
+									<input type="hidden" value="${distillery.latitude}"
+										name="latitude"> <input type="hidden"
+										value="${distillery.longitude}" name="longitude"> <br>
+
+									<input type="submit" class="btn btn-success"
+										value="Add Distillery">
+								</form>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
 
 </body>
 </html>
