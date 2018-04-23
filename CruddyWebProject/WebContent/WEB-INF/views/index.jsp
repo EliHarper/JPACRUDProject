@@ -51,26 +51,26 @@
 </head>
 <body>
 	<div class="container-fluid">
+	<table>
+		<tr>
 		<c:forEach var="distillery" items="${distilleries}">
-			<div class="row">
-				<div class="col-4">
-					<form action="show.do" method="GET">
-						<c:if test="${distillery.id % 2 == 0}">
-							<input type="hidden" name="id" value="${distillery.id}">
-							<input type="submit" class="btn btn-info"
-								value="${distillery.name}">
-						</c:if>
-						<c:if test="${distillery.id % 2 == 1}">
-							<input type="hidden" name="id" value="${distillery.id}">
-							<input type="submit" class="btn default"
-								value="${distillery.name}">
-						</c:if>
-				</div>
-			</div>
-
+		<td align="center">
+			<form action="show.do" method="GET">
+				<c:if test="${distillery.id % 2 == 0}">
+					<input type="hidden" name="id" value="${distillery.id}">
+					<input type="submit" class="btn btn-info"
+						value="${distillery.name}">
+				</c:if>
+				<c:if test="${distillery.id % 2 == 1}">
+					<input type="hidden" name="id" value="${distillery.id}">
+					<input type="submit" class="btn default" value="${distillery.name}">
+				</c:if>
+				<c:if test="${distillery.id % 5 == 0 }">
+					<tr>
+				</c:if>
 			</form>
 		</c:forEach>
-	</div>
+	</table>
 	</div>
 	<br>
 
