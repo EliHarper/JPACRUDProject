@@ -31,6 +31,24 @@
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 
+<style>
+	body, html {
+    height: 100%;
+}
+.bg { 
+    /* The image used */
+    background-image: url("http://mygiveonthings.com/wp-content/uploads/2016/03/christiansandbooze.jpg");
+
+    /* Half height */
+    height: 50%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+                    
+</style>
 
 <title>Distilleries :D</title>
 
@@ -50,9 +68,19 @@
 
 </head>
 <body>
+
+	<div class="bg"></div>
+
+    <p class="py-5 text-center"></p>
+	
+
 	<div class="container-fluid">
 	<table>
 		<tr>
+		<col width="300">
+		<col width="300">
+		<col width="300">
+		<col width="300">
 		<c:forEach var="distillery" items="${distilleries}">
 		<td align="center">
 			<form action="show.do" method="GET">
